@@ -1,0 +1,42 @@
+.wrapper {
+  display: grid;
+
+  /* use the fractions for size as it is the recommended unit */
+  grid-template-columns: 1fr 2fr 1fr;
+
+  /* if we've the same size columns we can repeat them like this */
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* and if we've diff size columns then we can repeat them too like this */
+  /* grid-template-columns: repeat(4,1fr 2fr); */
+
+  /* gap between columns */
+  /* column-gap: 1em;
+
+  gap between rows
+  row-gap: 1em; */
+  /* can use the following line instead of the above two lines */
+  gap: 1em;
+
+  /* specifying min and max width of the row, it will be min 100px and max as per the amount of content it has */
+  grid-auto-rows: minmax(100px, auto);
+
+  border: solid 1px black;
+  padding: 1em;
+
+  /* affects the position of divs in the current row  vertically*/
+  align-items: flex-start;
+
+  /* affects the position of divs in the current row horizontally */
+  justify-items: start;
+}
+
+.wrapper > div {
+  background: #eee;
+  padding: 1em;
+  border: solid 1px black;
+}
+
+.wrapper > div:nth-child(odd) {
+  background: #ddd;
+}
