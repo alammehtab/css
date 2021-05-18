@@ -57,7 +57,7 @@
 }
 
 .container-2-box {
-  /* it specifies the minimum size of the div/any container/element */
+  /* it specifies the size of the div/any container/element. we could use width instead but flex-basis is more flexy*/
   flex-basis: 27%;
 }
 
