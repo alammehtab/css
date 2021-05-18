@@ -27,6 +27,7 @@
 
 .container-3 {
   display: flex;
+  /* it allows the content to wrap-around as per the size of the screen */
   flex-wrap: wrap;
   justify-content: space-between;
 }
